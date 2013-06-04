@@ -274,4 +274,4 @@ if (!class_exists('WP_CustomizerLoader')) {
 
 WP_CustomizerLoader::get_instance();
 
-?> 
+?>
