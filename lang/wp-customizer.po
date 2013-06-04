@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Customizer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-03 17:41+0100\n"
+"PO-Revision-Date: 2013-06-03 17:41+0100\n"
+"Last-Translator: Gary Gale <gary@vicchi.org>\n"
+"Language-Team: Gary Gale <gary@vicchi.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../includes\n"
+
+#: ../includes/class-wp-customizer-admin.php:22
+msgid "Functions"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:23
+msgid "Scripts"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:24
+msgid "CSS"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:25
+#: ../includes/class-wp-customizer-admin.php:309
+msgid "Colophon"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:26
+#: ../includes/class-wp-customizer-admin.php:329
+msgid "Debug"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:29
+msgid "Plugin Documentation"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:30
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:31
+msgid "Plugin Support Forum"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:34
+#, php-format
+msgid ""
+"This is %s. Here you can load site specific functions, scripts \n"
+"and CSS files to tweak your site without the need to edit your theme's <code>functions.php</code> or other source file."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:38
+msgid "<strong>For more information:</strong>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:47
+#, php-format
+msgid "%s allows you to load your custom functions, scripts and CSS in three ways:"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:49
+#: ../includes/class-wp-customizer-pointers.php:57
+#: ../includes/class-wp-customizer-pointers.php:70
+#: ../includes/class-wp-customizer-pointers.php:83
+msgid "Front End: "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:49
+#: ../includes/class-wp-customizer-pointers.php:57
+#: ../includes/class-wp-customizer-pointers.php:70
+#: ../includes/class-wp-customizer-pointers.php:83
+msgid "Load on the front-end only; do not load when displaying admin screens"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:50
+#: ../includes/class-wp-customizer-pointers.php:58
+#: ../includes/class-wp-customizer-pointers.php:71
+#: ../includes/class-wp-customizer-pointers.php:84
+msgid "Admin: "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:50
+#: ../includes/class-wp-customizer-pointers.php:58
+#: ../includes/class-wp-customizer-pointers.php:71
+#: ../includes/class-wp-customizer-pointers.php:84
+msgid "Load on admin screens only; do not load when displaying posts or pages"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:51
+#: ../includes/class-wp-customizer-pointers.php:59
+#: ../includes/class-wp-customizer-pointers.php:72
+#: ../includes/class-wp-customizer-pointers.php:85
+msgid "Common: "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:51
+#: ../includes/class-wp-customizer-pointers.php:59
+#: ../includes/class-wp-customizer-pointers.php:72
+#: ../includes/class-wp-customizer-pointers.php:85
+msgid "Load on both the front-end and on admin screens"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:57
+msgid "Your collection of custom functions, scripts and CSS files live in a set of specially named folders. You can use the plugin's default names or choose your own to fit your needs."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:60
+msgid "The path names you specify must always be relative; they should not start with a <code>/</code> and should always be contained within the root of your WordPress installation."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:63
+#, php-format
+msgid "Your WordPress installation root is currently set to: <code>%s</code>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:68
+#, php-format
+msgid "%s supports loading custom functions, scripts and CSS files. Any file name that is valid for the operating system you're running WordPress on are acceptable."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:70
+msgid "Functions: "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:70
+msgid "Custom function files contain PHP; they should always have a file type of <code>.php</code>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:71
+msgid "Scripts: "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:71
+msgid "Custom script files contain JavaScript or jQuery; they should always have a file type of <code>.js</code>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:72
+msgid "CSS: "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:72
+msgid "Custom CSS files contain CSS; they should always have a file type of <code>.css</code>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:78
+#, php-format
+msgid "%s will always try to load the files it finds, as long as you have enabled that category of  files and the plugin is able to find and read the files in the folders you've configured."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:81
+msgid "To stop the auto-loading process; you can simply rename any of your files to start with an underscore character. For example a file called <code>functions-library.php</code> will auto-load; to stop this, rename the file to <code>_functions-library.php</code>."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:87
+msgid "Overview"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:92
+msgid "Customization Types"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:97
+msgid "Customization Paths"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:102
+msgid "Customization Files"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:107
+msgid "Disabling Auto Loading"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:132
+#: ../includes/class-wp-customizer-admin.php:133
+#: ../includes/class-wp-customizer.php:166
+msgid "WP Customizer"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:219
+msgid "Settings"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:286
+msgid "Scripts Options"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:297
+msgid "CSS Options"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:302
+msgid "\"When it comes to software, I much prefer free software, because I have very seldom seen a program that has worked well enough for my needs and having sources available can be a life-saver\"</em>&nbsp;&hellip;&nbsp;Linus Torvalds"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:303
+#, php-format
+msgid "For the inner nerd in you, the latest version of %s was written using <a href=\"http://macromates.com/\">TextMate</a> on a MacBook Pro running OS X 10.8.3 Mountain Lion and tested on the same machine running <a href=\"http://mamp.info/en/index.html\">MAMP</a> (Mac/Apache/MySQL/PHP) before being let loose on the author's <a href=\"http://www.vicchi.org/\">blog</a>."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:305
+#, php-format
+msgid "The official home for %s is on <a href=\"http://www.vicchi.org/codeage/wp-customizer/\">Mostly Maps</a>; it's also available from the official <a href=\"http://wordpress.org/extend/plugins/wp-customizer/\">WordPress plugins repository</a>. If you're interested in what lies under the hood, the code is also on <a href=\"https://github.com/vicchi/wp-customizer\">GitHub</a> to download, fork and otherwise hack around."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:314
+#, php-format
+msgid "For those times when you need help and support with this plugin, one of the first things you'll probably be asked for is the plugin's current configuration. If this happens, just <em>copy-and-paste</em> the dump of the <em>%s Options</em> below into any support forum post or email."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:321
+msgid "Plugin Options"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:341
+msgid "Functions Options"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:347
+#, php-format
+msgid "%s %s - Options"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:455
+msgid "Updated"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:497
+#, php-format
+msgid "%s Options %s"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:518
+msgid "Click to toggle"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:576
+#, php-format
+msgid "Save %s Options"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:598
+msgid "Help &amp; Support"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:608
+#, php-format
+msgid "For help and support with %s, here's what you can do, in order of preference:"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:610
+msgid "Look at the plugin's contextual help; click on the <em>Help</em> link at the top of this page."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:612
+msgid "Read the plugin's <a href=\"http://www.vicchi.org/codeage/wp-customizer/#faq\" target=\"_blank\">Frequently Asked Questions</a></li>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:614
+msgid "Ask a question on the <a href=\"http://wordpress.org/support/plugin/wp-customizer\" target=\"_blank\">WordPress support forum</a>; this is by far the best way so that other users can follow the conversation."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:616
+msgid "Ask me a question on Twitter; I'm <a href=\"http://twitter.com/vicchi\" target=\"_blank\">@vicchi</a>."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:618
+#, php-format
+msgid "Drop me an <a href=\"mailto:%s\">email </a>instead."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:620
+msgid "But help and support is a two way street; here's what you might want to do:"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:622
+#, php-format
+msgid "If you like this plugin and use it on your WordPress site, or if you write about it online, <a href=\"http://www.vicchi.org/codeage/wp-customizer/\">link to the plugin</a> and drop me an <a href=\"mailto:%s\">email</a> telling me about this."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:624
+msgid "Rate the plugin on the <a href=\"http://wordpress.org/extend/plugins/wp-customizer/\">WordPress plugin repository</a>."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:626
+#, php-format
+msgid "%s is free; no premium or light version, no ads. If you'd like to support this plugin <a href=\"http://www.vicchi.org/codeage/donate/\">here's how</a>."
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:628
+#, php-format
+msgid "<p>Find out what's new and get an overview of %s; <a href=\"%s\">restart the plugin tour</a>.</p>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:715
+msgid "The path names you specify must always be relative; they should not start with a <code>/</code> and should always be contained within the root of your WordPress installation; "
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:716
+#, php-format
+msgid "this is currently <code>%s</code>"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:741
+#, php-format
+msgid "Enable %s"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:745
+#, php-format
+msgid "Enable loading of %s"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:753
+#, php-format
+msgid "%s Path"
+msgstr ""
+
+#: ../includes/class-wp-customizer-admin.php:757
+#, php-format
+msgid "Path to the directory which contains %s"
+msgstr ""
+
+#: ../includes/class-wp-customizer-files.php:63
+msgid "File"
+msgstr ""
+
+#: ../includes/class-wp-customizer-files.php:64
+msgid "URL"
+msgstr ""
+
+#: ../includes/class-wp-customizer-files.php:65
+msgid "Dependencies"
+msgstr ""
+
+#: ../includes/class-wp-customizer-loader.php:85
+#: ../includes/class-wp-customizer-loader.php:148
+msgid "(empty)"
+msgstr ""
+
+#: ../includes/class-wp-customizer-loader.php:106
+#, php-format
+msgid "%d files found"
+msgstr ""
+
+#: ../includes/class-wp-customizer-loader.php:114
+msgid "(OK)"
+msgstr ""
+
+#: ../includes/class-wp-customizer-loader.php:114
+#: ../includes/class-wp-customizer-loader.php:119
+#: ../includes/class-wp-customizer-loader.php:141
+msgid "(unreadable)"
+msgstr ""
+
+#: ../includes/class-wp-customizer-loader.php:127
+msgid "(disabled)"
+msgstr ""
+
+#: ../includes/class-wp-customizer-loader.php:134
+msgid "No files found"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:53
+msgid "The Functions Tab"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:55
+#, php-format
+msgid "%s allows you to load your custom functions in three ways:"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:62
+#: ../includes/class-wp-customizer-pointers.php:75
+#: ../includes/class-wp-customizer-pointers.php:88
+msgid "Next"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:66
+msgid "The Scripts Tab"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:68
+#, php-format
+msgid "%s allows you to load your custom scripts in three ways:"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:79
+msgid "The CSS Tab"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:81
+#, php-format
+msgid "%s allows you to load your custom CSS in three ways:"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:92
+msgid "The Colophon Tab"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:93
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:94
+msgid "This tab contains the details on how this plugin was written; you can also find a helpful display of the plugin's configuration settings which you can use when asking for support on the <a href=\"http://wordpress.org/support/plugin/wp-customizer\">WordPress forums</a>."
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:95
+msgid "This is the end of the tour. To see this again you can click on the \"<em>restart the plugin tour</em>\" link, found on the <em>Help &amp; Support</em> side box on any of the plugin's admin tabs."
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:124
+#, php-format
+msgid "This Is %s %s"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:135
+#, php-format
+msgid "Something seems to be wrong with your %s installation; the file %s could not be found"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:138
+msgid "Want to know more? Look in the plugin's <code>readme.txt</code> or just click the <em>Find Out More</em> button below."
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:140
+msgid "Find Out More"
+msgstr ""
+
+#: ../includes/class-wp-customizer-pointers.php:181
+msgid "Close"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:24
+msgid "front end custom functions"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:30
+msgid "admin custom functions"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:36
+msgid "common custom functions"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:42
+msgid "front end custom scripts"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:48
+msgid "admin custom scripts"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:54
+msgid "common custom scripts"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:60
+msgid "front end custom CSS"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:66
+msgid "admin custom CSS"
+msgstr ""
+
+#: ../includes/class-wp-customizer.php:72
+msgid "common custom CSS"
+msgstr ""
+
