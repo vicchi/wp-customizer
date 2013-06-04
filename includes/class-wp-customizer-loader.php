@@ -9,6 +9,10 @@ if (!class_exists('WP_CustomizerLoader')) {
 		
 		private static $instance;
 		
+		/**
+		 * Class constructor
+		 */
+		
 		private function __construct() {
 			$this->hook('init');
 			if (is_admin()) {
@@ -19,13 +23,14 @@ if (!class_exists('WP_CustomizerLoader')) {
 			}
 		}
 		
-		public static function get_instance() {
-			if (!isset(self::$instance)) {
-				$class = __CLASS__;
-				self::$instance = new $class();
-			}
-			return self::$instance;
-		}
+		/**********************************************************************
+		 * Action Hooks
+		 */
+
+		/**
+		 * "init" action hook; runs after WordPress has loaded but before any headers are
+		 * sent. Loads (via include_once) the custom functions.
+		 */
 		
 		public function init() {
 			if (is_admin()) {
@@ -39,6 +44,21 @@ if (!class_exists('WP_CustomizerLoader')) {
 			$this->load_functions('common_functions');
 		}
 
+		/**********************************************************************
+		 * Admin Action Hooks
+		 */
+
+		/**
+		 * "admin_enqueue_scripts" action hook; enqueue the custom scripts and CSS for the
+		 *  admin panel
+		 *
+		 * Code Health Warning: Don't use the admin_print_scripts or admin_print_styles
+		 * action hooks. See :
+		 *	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_print_styles
+		 *	http://codex.wordpress.org/Plugin_API/Action_Reference/admin_print_scripts
+		 *	http://make.wordpress.org/core/2011/12/12/use-wp_enqueue_scripts-not-wp_print_styles-to-enqueue-scripts-and-styles-for-the-frontend/
+		 */
+
 		public function admin_enqueue_scripts() {
 			$this->load_scripts('admin_scripts');
 			$this->load_scripts('common_scripts');
@@ -47,6 +67,14 @@ if (!class_exists('WP_CustomizerLoader')) {
 			$this->load_css('common_css');
 		}
 		
+		/**********************************************************************
+		 * Action Hooks
+		 */
+
+		/**
+		 * "wp_enqueue_scripts" action hook; enqueue the custom front-end scripts and css
+		 */
+		
 		public function wp_enqueue_scripts() {
 			$this->load_scripts('scripts');
 			$this->load_scripts('common_scripts');
@@ -54,6 +82,15 @@ if (!class_exists('WP_CustomizerLoader')) {
 			$this->load_css('css');
 			$this->load_css('common_css');
 		}
+		
+		/**********************************************************************
+		 * Public Class Functions
+		 */
+
+		/**
+		 * Perform a "dry run" of loading all configured functions, scripts and css. Called
+		 * from WP_CustomizerAdmin::display_options and forms the body of the debug tab.
+		 */
 		
 		public function debug() {
 			$content = array();
@@ -67,6 +104,11 @@ if (!class_exists('WP_CustomizerLoader')) {
 
 			return implode(PHP_EOL, $content);
 		}
+		
+		/**
+		 * Called from WPCustomizerLoader::debug; performs a "dry run" for a specific file
+		 * type (functions, scripts or css)
+		 */
 		
 		public function debug_files($type) {
 			$options = WP_Customizer::get_option();
@@ -153,6 +195,30 @@ if (!class_exists('WP_CustomizerLoader')) {
 			return implode(PHP_EOL, $content);
 		}
 		
+		/**********************************************************************
+		 * Public Static Class Functions
+		 */
+
+		/**
+		 * Class singleton factory helper
+		 */
+
+		public static function get_instance() {
+			if (!isset(self::$instance)) {
+				$class = __CLASS__;
+				self::$instance = new $class();
+			}
+			return self::$instance;
+		}
+
+		/**********************************************************************
+		 * Private Class Functions
+		 */
+
+		/**
+		 * Gets a list of valid files for a given type (functions, scripts, css)
+		 */
+		
 		private function get_files($path, $file_type) {
 			$meta = array();
 			
@@ -193,9 +259,17 @@ if (!class_exists('WP_CustomizerLoader')) {
 			return $meta;
 		}
 		
+		/**
+		 * Makes the plugin's filter tag for a given type
+		 */
+		
 		private function make_filter_tag($type) {
 			return 'wp_customizer' . WP_Customizer::$types[$type]['config'];
 		}
+		
+		/**
+		 * Loads all valid functions for the current context (front-end, admin, common)
+		 */
 		
 		private function load_functions($type) {
 			$options = WP_Customizer::get_option();
@@ -221,6 +295,10 @@ if (!class_exists('WP_CustomizerLoader')) {
 			}
 		}
 		
+		/**
+		 * Loads all valid scripts for the current context (front-end, admin, common)
+		 */
+
 		private function load_scripts($type) {
 			$options = WP_Customizer::get_option();
 
@@ -244,6 +322,10 @@ if (!class_exists('WP_CustomizerLoader')) {
 				}
 			}
 		}
+
+		/**
+		 * Loads all valid CSS for the current context (front-end, admin, common)
+		 */
 
 		private function load_css($type) {
 			$options = WP_Customizer::get_option();

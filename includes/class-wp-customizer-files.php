@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('WPCUSTOMIZER_INCLUDE_SENTRY')) {
-	die ('The way is shut. It was made by those who are dead, and the dead keep it. The way is shut.');
+	die('The way is shut. It was made by those who are dead, and the dead keep it. The way is shut.');
 }
 
 if (!class_exists('WP_List_Table')) {

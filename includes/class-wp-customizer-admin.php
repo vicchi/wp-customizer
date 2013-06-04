@@ -642,6 +642,10 @@ and CSS files to tweak your site without the need to edit your theme\'s <code>fu
 			return (isset ($_POST[$field]) ? $_POST[$field] : "");
 		}
 		
+		/**
+		 * Called from "show_info"; validates a path and gets path status metadata
+		 */
+		
 		private function validate_path($path, $type) {
 			$meta = array(
 				'path' => $path,
@@ -673,6 +677,11 @@ and CSS files to tweak your site without the need to edit your theme\'s <code>fu
 			return $meta;
 		}
 
+		/**
+		 * Called from "make_section"; gets the current status of the the path settings for
+		 * the functions, scripts and css tabs.
+		 */
+		
 		private function show_info($type) {
 			$info = '';
 			$display = array();
@@ -708,6 +717,11 @@ and CSS files to tweak your site without the need to edit your theme\'s <code>fu
 			return implode(PHP_EOL, $display);
 		}
 		
+		/**
+		 * Called from "display_options"; outputs the common introduction section for the
+		 * functions, scripts and css tabs
+		 */
+		
 		private function make_intro_section() {
 			$display = array();
 			
@@ -718,6 +732,11 @@ and CSS files to tweak your site without the need to edit your theme\'s <code>fu
 			
 			return implode(PHP_EOL, $display);
 		}
+		
+		/**
+		 * Called from "display_options"; outputs the configuration options for a given
+		 * customisation type
+		 */
 		
 		private function make_section($type) {
 			$options = WP_Customizer::get_option();
