@@ -90,9 +90,15 @@ if (!class_exists('WP_CustomizerPointers')) {
 				),
 				'colophon' => array(
 					'content' => '<h3>' . __('The Colophon Tab', 'wp-customizer') . '</h3>'
-					. '<p><strong>' . sprintf(__('About %s', 'wp-customizer'), WP_Customizer::$name) . '</p></strong>'
-					. '<p>' . __('This tab contains the details on how this plugin was written; you can also find a helpful display of the plugin\'s configuration settings which you can use when asking for support on the <a href="http://wordpress.org/support/plugin/wp-customizer">WordPress forums</a>.', 'wp-customizer') . '</p>'
-					. '<p>' . __('This is the end of the tour. To see this again you can click on the "<em>restart the plugin tour</em>" link, found on the <em>Help &amp; Support</em> side box on any of the plugin\'s admin tabs.', 'wp-customizer') . '</p>'
+						. '<p><strong>' . sprintf(__('About %s', 'wp-customizer'), WP_Customizer::$name) . '</p></strong>'
+						. '<p>' . __('This tab contains the details on how this plugin was written; you can also find a helpful display of the plugin\'s configuration settings which you can use when asking for support on the <a href="http://wordpress.org/support/plugin/wp-customizer">WordPress forums</a>.', 'wp-customizer') . '</p>',
+					'button2' => __('Next', 'wp-customizer'),
+					'function' => 'window.location="' . $this->get_tab_url('debug') . '"'
+				),
+				'debug' => array(
+					'content' => '<h3>' . __('The Debug Tab', 'wp-customizer') . '</h3>'
+						. '<p>' . __('This tab allows you to check the characteristics of each type of customization you can make, specifying whether a customization is active, whether a path has been supplied, whether the path is valid and readable and whether any files found are valid, unreadable or disabled.', 'wp-customizer') . '</p>'
+						. '<p>' . __('This is the end of the tour. To see this again you can click on the "<em>restart the plugin tour</em>" link, found on the <em>Help &amp; Support</em> side box on any of the plugin\'s admin tabs.', 'wp-customizer') . '</p>'
 				)
 			);
 			
