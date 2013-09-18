@@ -30,6 +30,7 @@ if (!class_exists('WP_CustomizerUpgrade')) {
 				switch ($current_version) {
 					case '000':
 					case '100':
+					case '101':
 						$options['version'] = WP_Customizer::VERSION;
 						$upgrade = true;
 						

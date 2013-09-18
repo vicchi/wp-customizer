@@ -2,13 +2,13 @@
 Contributors: vicchi
 Donate Link: http://www.vicchi.org/codeage/donate/
 Tags: wp-customizer, customize, customise, scripts, functions, css, custom, load
-Requires at least: 3.5.0
-Tested up to: 3.5.1
-Stable tag: 1.0.0
+Requires at least: 3.5
+Tested up to: 3.6.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily load site specific functions, scripts and CSS files into your site without editing your theme's `functions.php` or other source files.
+Easily load site specific functions, scripts and CSS files into your site without editing your theme's functions.php or other source files.
 
 == Description ==
 
@@ -105,15 +105,24 @@ Totally; this plugin is licensed under the GNU General Public License v2 (GPLV2)
 
 == Changelog ==
 
-The current version is 1.0.0 (2013.05.29)
+The current version is 1.0.1 (2013.09.18)
 
-= 1.0 =
+= 1.0.1 =
+* Release 2013.09.18
+* Fixed: Annoying Markdown syntax in plugin overview text.
+* Fixed: Pointer help file is now included; this was missing in v1.0.0.
+* Added: Pointer text for the Debug tab.
+
+= 1.0.0 =
 * Released 2013.05.29
 * First version of WP Customizer released
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.1 =
+* This version fixes two minor bugs and adds support for the plugin's Debug tab in the tour.
+
+= 1.0.0 =
 * This is the first version of WP Customizer
 
 == Filter Support And Usage ==

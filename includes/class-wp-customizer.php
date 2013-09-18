@@ -12,8 +12,8 @@ if (!class_exists('WP_Customizer')) {
 		private static $instance;
 		
 		const OPTIONS = 'wp_customizer_options';
-		const VERSION = '100';
-		const DISPLAY_VERSION = 'v1.0.0';
+		const VERSION = '101';
+		const DISPLAY_VERSION = 'v1.0.1';
 
 		public static $name = 'WP Customizer';
 		public static $types;

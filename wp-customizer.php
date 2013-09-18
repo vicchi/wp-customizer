@@ -4,7 +4,7 @@
 Plugin Name: WP Customizer
 Plugin URI: http://www.vicchi.org/codeage/wp-customizer/
 Description: Manage and load custom function, script and CSS files into your theme without the need to edit your theme's functions.php or any other theme or plugin source file.
-Version: 1.0.0
+Version: 1.0.1
 Author: Gary Gale
 Author URI: http://www.garygale.com/
 License: GPL2
